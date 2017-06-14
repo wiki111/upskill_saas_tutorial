@@ -12,4 +12,4 @@ ActionMailer::Base.smtp_settings = {
     :domain     => 'ancient-lowlands-59305.herokuapp.com',
     :authentication => :plain,
 }
-ActionMailer::Base.deliviery_method = :smtp
+ActionMailer::Base.delivery_method = :smtp
