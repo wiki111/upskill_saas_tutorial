@@ -2,4 +2,16 @@ Memberships
 * User should see link for Basic plan on home page                      =>donzo
 * User should see link for Pro plan on homepage                         =>donzo
 * Basic plan link should point to regular Devise sign up form           =>donzo
-* Pro plan link should point to a custom sign up form
+* Pro plan link should point to a custom sign up form                   =>donzo
+
+Stripe Integration
+* Users should have a Stripe customer token in the users table
+* Javascript should prevent pro form from submitting when user 
+  fills it out, and should send card info to Stripe. It will return
+  with a card token.
+* Javascript should send user fields and card token to rails 
+  app for validation. Rails app will note wheather plan 1 or 2
+* Once validated rails should send user info and card token to stripe
+  server, and Stripe will create a subscription and send back customer  
+  token.
+* Rails should save customer token and user information to database
