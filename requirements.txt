@@ -15,3 +15,10 @@ Stripe Integration
   server, and Stripe will create a subscription and send back customer  
   token.                                                                =>donzo
 * Rails should save customer token and user information to database     =>donzo
+
+User Profiles
+* Each user should have one profile
+* User should see link to new profile upon signing up
+* User should be able to create and view their user profile
+* User should be able to upload profile picture
+* User should be able to view all users profiles
